@@ -5,7 +5,16 @@
 [![Coverage Status](https://coveralls.io/repos/github/go-ozzo/ozzo-routing/badge.svg?branch=master)](https://coveralls.io/github/go-ozzo/ozzo-routing?branch=master)
 [![Go Report](https://goreportcard.com/badge/github.com/go-ozzo/ozzo-routing)](https://goreportcard.com/report/github.com/go-ozzo/ozzo-routing)
 
-**You may consider using [go-rest-api](https://github.com/qiangxue/go-rest-api) to jumpstart your new RESTful applications with ozzo-routing.**
+**You may consider using [go-rest-api](https://github.com/garaekz/go-rest-api) to jumpstart your new RESTful applications with ozzo-routing.**
+
+## Disclaimer
+
+This is a fork of [ozzo-routing](https://github.com/go-ozzo/ozzo-routing) with the following changes:
+
+- Updated to Go 1.22
+- Change dependency from `github.com/golang-jwt/jwt` to updated version `github.com/golang-jwt/jwt/v5`
+
+It is intended to be used in a project that requires the updated version of `github.com/golang-jwt/jwt` and Go 1.22 as the original project hasn't been updated for the past 3 years. I'm not the original author of the package, so I'm not responsible for the original code. I'll try to keep the package updated with the original version, but I can't guarantee that it will be always up to date as I'm mostly using it for my personal projects with Go and I'm a PHP developer.
 
 ## Description
 
@@ -33,12 +42,12 @@ Go 1.13 or above.
 In your Go project using `go mod`, run the following command to install the package:
 
 ```
-go get github.com/go-ozzo/ozzo-routing/v2
+go get github.com/garaekz/ozzo-routing
 ```
 
 ## Getting Started
 
-For a complete RESTful application boilerplate based on ozzo-routing, please refer to the [golang-restful-starter-kit](https://github.com/qiangxue/golang-restful-starter-kit). Below we describe how to create a simple REST API using ozzo-routing.
+For a complete RESTful application boilerplate based on ozzo-routing, please refer to the [golang-restful-starter-kit](https://github.com/garaekz/go-rest-api). Below we describe how to create a simple REST API using this updated ozzo-routing.
 
 Create a `server.go` file with the following content:
 
@@ -48,12 +57,12 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/access"
-	"github.com/go-ozzo/ozzo-routing/v2/slash"
-	"github.com/go-ozzo/ozzo-routing/v2/content"
-	"github.com/go-ozzo/ozzo-routing/v2/fault"
-	"github.com/go-ozzo/ozzo-routing/v2/file"
+	"github.com/garaekz/ozzo-routing"
+	"github.com/garaekz/ozzo-routing/access"
+	"github.com/garaekz/ozzo-routing/slash"
+	"github.com/garaekz/ozzo-routing/content"
+	"github.com/garaekz/ozzo-routing/fault"
+	"github.com/garaekz/ozzo-routing/file"
 )
 
 func main() {
@@ -337,8 +346,8 @@ under the specified directories, while the latter serves the content of a single
 
 ```go
 import (
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/file"
+	"github.com/garaekz/ozzo-routing"
+	"github.com/garaekz/ozzo-routing/file"
 )
 
 router := routing.NewRouter()
@@ -378,10 +387,10 @@ The following code shows how these handlers may be used:
 import (
 	"log"
 	"net/http"
-	"github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/go-ozzo/ozzo-routing/v2/access"
-	"github.com/go-ozzo/ozzo-routing/v2/slash"
-	"github.com/go-ozzo/ozzo-routing/v2/fault"
+	"github.com/garaekz/ozzo-routing"
+	"github.com/garaekz/ozzo-routing/access"
+	"github.com/garaekz/ozzo-routing/slash"
+	"github.com/garaekz/ozzo-routing/fault"
 )
 
 router := routing.New()

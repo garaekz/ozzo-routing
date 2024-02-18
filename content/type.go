@@ -10,7 +10,7 @@ import (
 	"encoding/xml"
 	"net/http"
 
-	routing "github.com/go-ozzo/ozzo-routing/v2"
+	routing "github.com/garaekz/ozzo-routing"
 )
 
 // MIME types

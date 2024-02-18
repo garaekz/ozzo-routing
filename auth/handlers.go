@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	routing "github.com/go-ozzo/ozzo-routing/v2"
+	routing "github.com/garaekz/ozzo-routing"
 	"github.com/golang-jwt/jwt/v5"
 )
 
@@ -35,8 +35,8 @@ type BasicAuthFunc func(c *routing.Context, username, password string) (Identity
 //	  "errors"
 //	  "fmt"
 //	  "net/http"
-//	  "github.com/go-ozzo/ozzo-routing/v2"
-//	  "github.com/go-ozzo/ozzo-routing/v2/auth"
+//	  "github.com/garaekz/ozzo-routing"
+//	  "github.com/garaekz/ozzo-routing/auth"
 //	)
 //	func main() {
 //	  r := routing.New()
@@ -95,8 +95,8 @@ type TokenAuthFunc func(c *routing.Context, token string) (Identity, error)
 //	  "errors"
 //	  "fmt"
 //	  "net/http"
-//	  "github.com/go-ozzo/ozzo-routing/v2"
-//	  "github.com/go-ozzo/ozzo-routing/v2/auth"
+//	  "github.com/garaekz/ozzo-routing"
+//	  "github.com/garaekz/ozzo-routing/auth"
 //	)
 //	func main() {
 //	  r := routing.New()
@@ -152,8 +152,8 @@ var TokenName = "access-token"
 //	  "errors"
 //	  "fmt"
 //	  "net/http"
-//	  "github.com/go-ozzo/ozzo-routing/v2"
-//	  "github.com/go-ozzo/ozzo-routing/v2/auth"
+//	  "github.com/garaekz/ozzo-routing"
+//	  "github.com/garaekz/ozzo-routing/auth"
 //	)
 //	func main() {
 //	  r := routing.New()
@@ -224,8 +224,8 @@ func DefaultJWTTokenHandler(c *routing.Context, token *jwt.Token) error {
 //	  "fmt"
 //	  "net/http"
 //	  "github.com/dgrijalva/jwt-go"
-//	  "github.com/go-ozzo/ozzo-routing/v2"
-//	  "github.com/go-ozzo/ozzo-routing/v2/auth"
+//	  "github.com/garaekz/ozzo-routing"
+//	  "github.com/garaekz/ozzo-routing/auth"
 //	)
 //	func main() {
 //	  signingKey := "secret-key"

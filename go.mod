@@ -1,4 +1,4 @@
-module github.com/go-ozzo/ozzo-routing/v2
+module github.com/garaekz/ozzo-routing
 
 go 1.22
 
