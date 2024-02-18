@@ -1,9 +1,9 @@
 # ozzo-routing
 
-[![GoDoc](https://godoc.org/github.com/go-ozzo/ozzo-routing?status.png)](http://godoc.org/github.com/go-ozzo/ozzo-routing)
-[![Build Status](https://travis-ci.org/go-ozzo/ozzo-routing.svg?branch=master)](https://travis-ci.org/go-ozzo/ozzo-routing)
-[![Coverage Status](https://coveralls.io/repos/github/go-ozzo/ozzo-routing/badge.svg?branch=master)](https://coveralls.io/github/go-ozzo/ozzo-routing?branch=master)
-[![Go Report](https://goreportcard.com/badge/github.com/go-ozzo/ozzo-routing)](https://goreportcard.com/report/github.com/go-ozzo/ozzo-routing)
+[![Build Status](https://github.com/garaekz/ozzo-routing/actions/workflows/build.yml/badge.svg)](https://github.com/garaekz/ozzo-routing/actions/workflows/build.yml)
+[![Codecov](https://codecov.io/gh/garaekz/ozzo-routing/graph/badge.svg?token=ANUCNKP1IC)](https://codecov.io/gh/garaekz/ozzo-routing)
+[![Go Report](https://goreportcard.com/badge/github.com/garaekz/ozzo-routing)](https://goreportcard.com/report/github.com/garaekz/ozzo-routing)
+[![GoDoc](https://godoc.org/github.com/garaekz/ozzo-routing?status.png)](http://godoc.org/github.com/garaekz/ozzo-routing)
 
 **You may consider using [go-rest-api](https://github.com/garaekz/go-rest-api) to jumpstart your new RESTful applications with ozzo-routing.**
 
