@@ -11,7 +11,7 @@ import (
 	"testing"
 
 	routing "github.com/go-ozzo/ozzo-routing/v2"
-	"github.com/golang-jwt/jwt"
+	"github.com/golang-jwt/jwt/v5"
 	"github.com/stretchr/testify/assert"
 )
 
