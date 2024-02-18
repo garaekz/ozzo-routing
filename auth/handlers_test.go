@@ -10,8 +10,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	routing "github.com/go-ozzo/ozzo-routing/v2"
 	"github.com/golang-jwt/jwt"
-	"github.com/go-ozzo/ozzo-routing/v2"
 	"github.com/stretchr/testify/assert"
 )
 
